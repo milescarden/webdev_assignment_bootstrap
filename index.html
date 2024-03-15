@@ -1,18 +1,77 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-     <!-- Required meta tags -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
-    <title>Magic Bean Emporium</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magic Beans Emporium</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rZyoQzKhuBl8+BfEZ5s8rUpOv0cCB8F2+nP7Xq3tcyJGZGzUd6kN3g5qF0O8NsOl" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .tab-content {
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-    <h1>Magic Bean Emporium</h1>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <div class="container">
+    <header class="mt-3 mb-5 text-center">
+      <h1>Welcome to Magic Beans Emporium</h1>
+      <p class="lead">Where Dreams Sprout!</p>
+    </header>
+
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" data-bs-toggle="tab" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#why-choose-us">Why Choose Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#contact-us">Contact Us</a>
+      </li>
+    </ul>
+
+    <div class="tab-content">
+      <div class="tab-pane fade show active" id="about">
+        <div class="row mt-5">
+          <div class="col-md-6">
+            <img src="assets/magicbeans.jpg" class="img-fluid" alt="Magic Beans">
+          </div>
+          <div class="col-md-6">
+            <h2>About Magic Beans</h2>
+            <p>At Magic Beans Emporium, we specialize in providing the finest quality magic beans sourced from enchanted gardens across the realm. Our beans are known for their mystical properties, capable of granting wishes and bringing prosperity to those who possess them.</p>
+            <p>Whether you're seeking adventure, love, or fortune, our magic beans are the perfect companions for your journey.</p>
+            <a href="#" class="btn btn-primary">Shop Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="why-choose-us">
+        <div class="row mt-5">
+          <div class="col-md-12">
+            <h2>Why Choose Us?</h2>
+            <p>We have years of experience in the magical plant industry. Our dedication to quality and customer satisfaction sets us apart from the rest.</p>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="contact-us">
+        <div class="row mt-5">
+          <div class="col-md-12">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or inquiries, feel free to reach out to us.</p>
+            <p>Email: info@magicbeans.com<br>Phone: 123-456-7890</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-NCQmwBd02Pzv0TpuSc1sWJ9W2o4p+PipxE1N5Htj9kmmT6z8rABp4NFHaROn/bqs" crossorigin="anonymous"></script>
 </body>
 </html>
